@@ -4,7 +4,10 @@
   "scripts": {
     "dev": "node --experimental-modules server.mjs",
     "build": "next build",
-    "start": "NODE_ENV=production node --experimental-modules server.mjs"
+    "start": "NODE_ENV=production node --experimental-modules server.mjs",
+    "analyze": "BUNDLE_ANALYZE=both next build",
+    "analyze:server": "BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "BUNDLE_ANALYZE=browser next build"
   },
   "engines": {
     "node": "10.13.0",
@@ -17,5 +20,8 @@
     "next": "^7.0.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "@zeit/next-bundle-analyzer": "^0.1.2"
   }
 }
