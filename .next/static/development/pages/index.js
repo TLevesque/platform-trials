@@ -9854,16 +9854,16 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/b",
+    href: "/a",
     as: "/a"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "a"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/a",
+    href: "/b",
     as: "/b"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "b"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: {
-      pathname: '/posts',
+      pathname: "/posts",
       query: {
-        id: '2'
+        id: "2"
       }
     },
     as: "/posts/2"

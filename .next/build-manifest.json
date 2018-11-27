@@ -15,7 +15,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/posts": [
+    "/a": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
@@ -23,7 +23,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/a": [
+    "/posts": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],

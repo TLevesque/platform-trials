@@ -130,7 +130,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 6:
 /*!******************************!*\
   !*** multi ./pages/posts.js ***!
   \******************************/
@@ -155,5 +155,5 @@ module.exports = dll_52339ab353c8e0db40da;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
+},[[6,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=posts.js.map

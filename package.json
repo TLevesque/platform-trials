@@ -1,5 +1,5 @@
 {
-  "name": "custom-server-express",
+  "name": "custom-server-koa",
   "version": "1.0.0",
   "scripts": {
     "dev": "node --experimental-modules server.mjs",

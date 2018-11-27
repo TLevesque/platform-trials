@@ -83,7 +83,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 6:
+/***/ 5:
 /*!**************************!*\
   !*** multi ./pages/b.js ***!
   \**************************/
@@ -108,5 +108,5 @@ module.exports = dll_52339ab353c8e0db40da;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js"]]]));;
+},[[5,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=b.js.map
