@@ -9,6 +9,7 @@ const {
   WebpackBundleSizeAnalyzerPlugin
 } = require("webpack-bundle-size-analyzer");
 const { ANALYZE } = process.env;
+const withTM = require("next-plugin-transpile-modules");
 
 const nextConfig = {
   webpack: config => {
@@ -23,6 +24,21 @@ const nextConfig = {
     if (ANALYZE) {
       config.plugins.push(new WebpackBundleSizeAnalyzerPlugin("stats.txt"));
     }
+    config.externals = Array.isArray(config.externals)
+      ? config.externals.map(fn =>
+          typeof fn === "function"
+            ? (context, request, callback) => {
+                // We use lodash-es in the browser for tree-shaking, but
+                // switch to the regular lodash on the server to avoid having
+                // to transpile `import`/`export` there.
+                if (request === "lodash-es") {
+                  return callback(null, "commonjs lodash");
+                }
+                return fn(context, request, callback);
+              }
+            : fn
+        )
+      : config.externals;
     return config;
   }
 };
@@ -48,6 +64,12 @@ module.exports = withPlugins(
             reportFilename: "./bundles/client.html"
           }
         }
+      }
+    ],
+    [
+      withTM,
+      {
+        transpileModules: ["lodash-es"]
       }
     ]
   ],
