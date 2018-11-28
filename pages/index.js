@@ -1,22 +1,26 @@
 import React from "react";
 import Link from "next/link";
 
+import "../styles/style.scss";
+
 export default () => (
-  <ul>
-    <li>
-      <Link href="/a" as="/a">
-        <a>a</a>
-      </Link>
-    </li>
-    <li>
-      <Link href="/b" as="/b">
-        <a>b</a>
-      </Link>
-    </li>
-    <li>
-      <Link href={{ pathname: "/posts", query: { id: "2" } }} as="/posts/2">
-        <a>post #2</a>
-      </Link>
-    </li>
-  </ul>
+  <div className="example">
+    <ul>
+      <li>
+        <Link href="/a" as="/a">
+          <a>a</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/b" as="/b">
+          <a>b</a>
+        </Link>
+      </li>
+      <li>
+        <Link href={{ pathname: "/posts", query: { id: "2" } }} as="/posts/2">
+          <a>post #2</a>
+        </Link>
+      </li>
+    </ul>
+  </div>
 );
