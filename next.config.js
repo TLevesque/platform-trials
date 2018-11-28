@@ -3,7 +3,12 @@ const sass = require("@zeit/next-sass");
 require("dotenv").config();
 const path = require("path");
 const Dotenv = require("dotenv-webpack");
+const images = require("next-images");
 const withBundleAnalyzer = require("@zeit/next-bundle-analyzer");
+const {
+  WebpackBundleSizeAnalyzerPlugin
+} = require("webpack-bundle-size-analyzer");
+const { ANALYZE } = process.env;
 
 const nextConfig = {
   webpack: config => {
@@ -15,7 +20,9 @@ const nextConfig = {
         systemvars: true
       })
     ];
-
+    if (ANALYZE) {
+      config.plugins.push(new WebpackBundleSizeAnalyzerPlugin("stats.txt"));
+    }
     return config;
   }
 };
@@ -23,6 +30,7 @@ const nextConfig = {
 module.exports = withPlugins(
   [
     [sass],
+    [images],
     [
       withBundleAnalyzer,
       {
