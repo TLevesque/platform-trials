@@ -1,0 +1,160 @@
+@import '../defaults';
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.blur {
+  filter: blur(5px) !important;
+  -webkit-filter: blur(5px) !important;
+  -moz-filter: blur(5px) !important;
+  -o-filter: blur(5px) !important;
+  -ms-filter: blur(5px) !important;
+}
+
+.darken {
+  transition: filter 0.25s;
+
+  &:hover {
+    filter: brightness(75%);
+  }
+}
+
+.grommetux-drop {
+  z-index: 2000 !important;
+}
+
+/* Adding CSS manually is only necessary in JSFiddle,
+   where CSS can't be inserted into the <head> */
+.typed-cursor {
+  opacity: 1;
+  animation: typedjsBlink 0.7s infinite;
+  -webkit-animation: typedjsBlink 0.7s infinite;
+  animation: typedjsBlink 0.7s infinite;
+}
+@keyframes typedjsBlink {
+  50% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes typedjsBlink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.typed-fade-out {
+  opacity: 0;
+  transition: opacity 0.25s;
+  -webkit-animation: 0;
+  animation: 0;
+}
+
+.fade-out-text {
+  background-image: linear-gradient(
+    90deg,
+    transparent 80%,
+    rgba(238, 238, 238, 0.9)
+  );
+}
+
+.fade-in-box {
+  background-image: linear-gradient(
+    90deg,
+    rgba(100, 100, 100, 0.5) 0%,
+    transparent
+  );
+}
+
+.fade-out-box {
+  background-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(100, 100, 100, 0.5)
+  );
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.easy-transition-box {
+  position: relative;
+}
+
+.easy-transition-box > div:nth-child(2) {
+  position: absolute;
+  top: 0;
+}
+
+.dropzone-box {
+  height: 100px !important;
+  width: 100% !important;
+}
+
+.react-tel-input .flag-dropdown.open-dropdown,
+.react-tel-input .flag-dropdown.open-dropdown .selected-flag {
+  background-color: transparent;
+}
+.react-tel-input .flag-dropdown:hover .selected-flag {
+  background-color: transparent;
+}
+
+.google-map-container a {
+  color: rgb(68, 68, 68) !important;
+}
+
+.hide-collapsible {
+  visibility: hidden;
+}
+
+.website-form-input {
+  border-radius: 18px !important;
+  background-color: #ebeced !important;
+  border: 0 !important;
+  width: 100%;
+  padding: 11px 23px !important;
+}
+
+.react-parallax-background-children {
+  width: 100%;
+  height: 100%;
+}
+
+.react-swipeable-view-container > div {
+  overflow: hidden !important;
+}
+
+@media (min-width: 384px) {
+  .medium-cardstack {
+    min-width: 384px !important;
+  }
+}
+
+.website-form-icon {
+  cursor: pointer;
+  transition: 1s all;
+  border-radius: 30px;
+  height: 30px;
+  width: 45px;
+  background-color: lightgrey;
+  box-shadow: 0 2px 6px rgba(0, 21, 64, 0.1), 0 8px 12px rgba(0, 21, 64, 0.05);
+  border: 2px solid lightgrey;
+}
+.website-form-icon:hover {
+  border: 2px solid grey;
+}
+
+.react-card-front {
+  transform-style: unset !important;
+}

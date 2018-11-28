@@ -1,0 +1,23 @@
+.col__span-50 {
+  width: 100%;
+  min-width: 100%;
+
+  @include media-query(lap-and-up) {
+    width: 50%;
+    min-width: 50%;
+  }
+}
+
+.col__span-25 {
+  width: 100%;
+  min-width: 100%;
+
+  @media (min-width: 950px) {
+    width: 25%;
+    min-width: 25%;
+  }
+}
+
+.stacked-row {
+  width: 100%;
+}

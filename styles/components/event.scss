@@ -1,0 +1,13 @@
+@import '../defaults';
+
+.event-laundry {
+  background-color: red !important;
+}
+
+.event-gardening {
+  background-color: green !important;
+}
+
+.event-groceries {
+  background-color: $brand-color !important;
+}

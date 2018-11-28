@@ -1,0 +1,9 @@
+@import '../defaults';
+
+.stripe-row > :first-child {
+  width: 12em;
+}
+
+.stripe-row > :last-child {
+  width: 5em;
+}

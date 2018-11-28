@@ -1478,5 +1478,21 @@
       "file": "static/chunks/commons.eefeab8bc2eae127811c.js",
       "publicPath": "static/chunks/commons.eefeab8bc2eae127811c.js"
     }
+  ],
+  "../styles/index.scss": [
+    {
+      "id": 239,
+      "name": "./styles/index.scss",
+      "file": "static/chunks/styles.d79869b37b1fafadd2b2.js",
+      "publicPath": "static/chunks/styles.d79869b37b1fafadd2b2.js"
+    }
+  ],
+  "undefined": [
+    {
+      "id": 822,
+      "name": null,
+      "file": "static/chunks/styles.d79869b37b1fafadd2b2.js",
+      "publicPath": "static/chunks/styles.d79869b37b1fafadd2b2.js"
+    }
   ]
 }

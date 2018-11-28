@@ -28,9 +28,6 @@ const nextConfig = {
       ? config.externals.map(fn =>
           typeof fn === "function"
             ? (context, request, callback) => {
-                // We use lodash-es in the browser for tree-shaking, but
-                // switch to the regular lodash on the server to avoid having
-                // to transpile `import`/`export` there.
                 if (request === "lodash-es") {
                   return callback(null, "commonjs lodash");
                 }

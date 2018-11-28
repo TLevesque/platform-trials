@@ -1,0 +1,36 @@
+@import "fonts";
+@import "defaults";
+@import "components/index";
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  line-height: normal;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+$color: #b31c1c;
+.example {
+  background-color: $color !important;
+}

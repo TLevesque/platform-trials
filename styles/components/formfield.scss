@@ -1,0 +1,92 @@
+@import '../defaults';
+
+%formfield {
+  border-radius: 18px !important;
+  font-size: 1rem !important;
+  background-color: lighten(nth($brand-grey-colors, 3), 15%) !important;
+  border: none !important;
+  width: 280px !important;
+}
+
+.hive-formfield {
+  &-stripe {
+    background-color: #ebeced !important;
+    padding: 10px 20px !important;
+    border-radius: 18px !important;
+
+    &-small {
+      width: 135px !important;
+    }
+
+    &-large {
+      width: 280px !important;
+    }
+  }
+
+  &-div {
+    @extend %formfield;
+  }
+
+  &-input {
+    background-color: transparent !important;
+    border: none !important;
+    width: 100% !important;
+    padding: 10px 20px !important;
+  }
+
+  &-radio {
+    position: absolute !important;
+    visibility: hidden !important;
+
+    &-label {
+      background-color: nth($brand-grey-colors, 3) !important;
+      padding: 5px 20px !important;
+      border-radius: 18px !important;
+      border-width: 2px !important;
+      border-style: solid !important;
+      border-color: nth($brand-grey-colors, 3) !important;
+      width: 130px !important;
+      line-height: 2 !important;
+      text-align: center !important;
+      text-transform: uppercase !important;
+      font-size: 0.9rem !important;
+      font-weight: 500 !important;
+
+      &:hover {
+        background-color: $brand-color-lighter !important;
+        border-color: $brand-color-lighter !important;
+      }
+    }
+  }
+
+  &-spanform {
+    float: right !important;
+  }
+
+  &-span {
+    width: 100% !important;
+    text-align: right !important;
+    font-size: 0.6rem !important;
+    padding: 5px 10px !important;
+    color: red !important;
+    position: absolute !important;
+  }
+}
+
+.grommetux-accordion-panel__header {
+  color: #000 !important;
+  font-size: 24px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.2em !important;
+  text-align: center !important;
+  justify-content: center !important;
+}
+
+input[type='radio']:checked ~ .hive-formfield-radio-label {
+  background-color: nth($brand-light-colors, 1) !important;
+  border-width: 2px !important;
+  border-style: solid !important;
+  border-color: $brand-color !important;
+  color: $brand-color !important;
+  font-weight: 900 !important;
+}

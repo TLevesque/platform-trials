@@ -1,6 +1,5 @@
 {
   "name": "custom-server-koa",
-  "sideEffects": false,
   "version": "1.0.0",
   "scripts": {
     "dev": "node --experimental-modules server.mjs",

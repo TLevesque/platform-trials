@@ -1,0 +1,308 @@
+@import '../defaults';
+
+input[type='time']::-webkit-clear-button {
+  display: none;
+}
+
+.bookup-input {
+  &-stripe {
+    border: 2px solid grey;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Work Sans';
+    padding: 10px 15px;
+  }
+
+  &-password {
+    &-icon {
+      transition: all ease 0.5s;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &-suggestions {
+    & .grommetux-control-icon {
+      stroke: transparent !important;
+    }
+
+    & button {
+      height: 30px !important;
+    }
+
+    & input {
+      height: 30px !important;
+      width: 250px !important;
+      border-top: 2px solid $brand-color !important;
+      border-left: 2px solid $brand-color !important;
+      border-bottom: 2px solid $brand-color !important;
+      border-radius: 20px 0px 0px 20px !important;
+    }
+  }
+
+  &-filter-search {
+    width: 250px;
+    border-top: 2px solid $brand-color;
+    border-left: 2px solid $brand-color;
+    border-bottom: 2px solid $brand-color;
+    border-radius: 20px 0px 0px 20px;
+
+    & .grommetux-control-icon {
+      stroke: transparent !important;
+    }
+
+    & button {
+      height: 30px !important;
+    }
+
+    & input {
+      height: 30px !important;
+    }
+  }
+
+  &-single-select {
+    border-radius: 8px;
+    border: 2px solid grey;
+
+    & .grommetux-select {
+      width: 100% !important;
+    }
+  }
+
+  &-single-select-circular {
+    border-radius: 22px;
+    border: 2px solid grey;
+    line-height: 30px;
+    height: 30px;
+    padding: 0px;
+
+    & .grommetux-select {
+      width: 100% !important;
+    }
+  }
+
+  &-fancy-select {
+    border-radius: 20px;
+    background-color: $brand-color;
+
+    & input {
+      color: white !important;
+    }
+
+    & input::placeholder {
+      color: darken(white, 3%) !important;
+    }
+
+    & .grommetux-control-icon {
+      stroke: white !important;
+    }
+
+    & .grommetux-select {
+      width: 100% !important;
+    }
+  }
+
+  &-simple-select {
+    border-radius: 20px;
+    border: 2px solid var(--brand-primary);
+    background-color: transparent;
+    position: relative;
+
+    & input {
+      color: var(--brand-primary) !important;
+      padding: 6px 12px !important;
+    }
+
+    & input::placeholder {
+      color: darken(white, 3%) !important;
+    }
+
+    & .grommetux-control-icon {
+      stroke: var(--brand-primary) !important;
+    }
+
+    & .grommetux-button {
+      right: 0px !important;
+    }
+
+    & .grommetux-select {
+      width: 100% !important;
+    }
+
+    & .helper {
+      z-index: -1;
+      position: absolute;
+      height: 35px;
+      right: 0px;
+      width: 50px;
+      background-color: white;
+      border-radius: 0px 15px 15px 0px;
+    }
+  }
+
+  &-fancy-search {
+    border-top: 2px solid $brand-color;
+    border-left: 2px solid $brand-color;
+    border-bottom: 2px solid $brand-color;
+    border-radius: 20px 0px 0px 20px;
+
+    & .grommetux-control-icon {
+      stroke: transparent !important;
+    }
+
+    & button {
+      height: 30px !important;
+    }
+
+    & input {
+      height: 30px !important;
+    }
+  }
+
+  &-address {
+    border: 2px solid grey !important;
+    border-radius: 8px !important;
+    width: 100%;
+    height: 100%;
+    padding: 11px 23px !important;
+
+    &:focus {
+      border: 2px solid black !important;
+    }
+  }
+
+  &-text {
+    border: 2px solid grey !important;
+    border-radius: 8px !important;
+
+    &:focus {
+      border: 2px solid black !important;
+    }
+
+    &-error {
+      border: 2px solid var(--failure) !important;
+
+      &:focus {
+        border: 2px solid var(--failure) !important;
+      }
+    }
+  }
+
+  &-time {
+    padding: 3px 5px 3px 5px !important;
+    border: 2px solid grey !important;
+    border-radius: 8px !important;
+    width: 70px !important;
+
+    &:focus {
+      border: 2px solid black !important;
+    }
+  }
+
+  &-search {
+    border: 2px solid grey !important;
+    border-radius: 55px !important;
+    height: 100% !important;
+
+    &:focus {
+      border: 2px solid black !important;
+      padding: 11px 23px !important;
+    }
+
+    &-error {
+      border: 2px solid var(--failure) !important;
+
+      &:focus {
+        border: 2px solid var(--failure) !important;
+      }
+    }
+
+    & > div {
+      border-radius: 60px !important;
+
+      & > input {
+        padding: 15px 15px 15px 60px !important;
+        font-size: 25px !important;
+      }
+      & > svg {
+        padding: 0px 10px 0px 0px !important;
+        width: 50px !important;
+      }
+    }
+  }
+
+  &-textarea {
+    border: 2px solid grey !important;
+    border-radius: 8px !important;
+
+    &:focus {
+      border: 2px solid black !important;
+    }
+
+    &-error {
+      border: 2px solid var(--failure) !important;
+
+      &:focus {
+        border: 2px solid var(--failure) !important;
+      }
+    }
+
+    &-warning {
+      border: 2px solid var(--loading) !important;
+
+      &:focus {
+        border: 2px solid var(--loading) !important;
+      }
+    }
+  }
+}
+
+.clear-icon {
+  color: grey;
+  transition: all ease 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.hide {
+  opacity: 0;
+}
+
+.spinner {
+  &-text {
+    padding-top: 6px;
+  }
+
+  &-boolean {
+    padding-right: 40px;
+    padding-top: 5px;
+  }
+}
+
+.grommetux-date-time__input {
+  height: 46px;
+}
+
+.grommetux-radio-button__label {
+  color: black !important;
+}
+
+.grommetux-radio-button__input:focus + .grommetux-radio-button__control {
+  border-color: var(--brand-primary) !important;
+}
+
+.grommet dd,
+.grommet li:not([class^='grommetux-']) {
+  color: black;
+}
+
+.grommetux-select__drop .grommetux-select__option--selected {
+  color: $brand-color;
+}

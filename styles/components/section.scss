@@ -1,0 +1,56 @@
+@import '../defaults';
+
+.hive__section {
+  &-scroll {
+    &-link {
+      color: black !important;
+      font-weight: 100 !important;
+
+      &:focus {
+        // text-decoration: underline;
+      }
+
+      &:visited {
+        text-decoration: none !important;
+      }
+
+      &:hover {
+        text-transform: uppercase !important;
+        text-decoration-color: $brand-link-color !important;
+        color: $brand-link-color !important;
+        font-weight: 500 !important;
+      }
+    }
+  }
+
+  &-header {
+    &-arrow {
+      border-bottom: 2px solid transparent;
+
+      &:visited {
+        color: $text-color;
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: $brand-color-darker;
+      }
+    }
+
+    &-link {
+      text-transform: uppercase !important;
+      padding: 15px 22px !important;
+      color: $text-color !important;
+      border-bottom: 2px solid transparent !important;
+
+      &:hover {
+        border-bottom: 2px solid $brand-color !important;
+        text-decoration: none !important;
+      }
+
+      &--active {
+        border-bottom: 2px solid $brand-color !important;
+      }
+    }
+  }
+}

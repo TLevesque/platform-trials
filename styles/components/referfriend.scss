@@ -1,0 +1,11 @@
+.referfriend {
+  box-sizing: content-box;
+  max-width: 75rem;
+  align-self: center;
+  width: 100%;
+  transition: filter 0.25s;
+
+  &:hover {
+    filter: brightness(75%);
+  }
+}

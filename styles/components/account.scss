@@ -1,0 +1,32 @@
+@import '../defaults';
+
+.hive__account {
+  &-div {
+    padding-top: 22px;
+    padding-bottom: 22px;
+
+    & > span {
+      color: nth($brand-grey-colors, 3) !important;
+    }
+  }
+}
+
+.grommetux-check-box__label {
+  color: black !important;
+}
+
+.Popover {
+  z-index: 2 !important;
+}
+
+.grommetux-select__control svg {
+  background-color: transparent !important;
+}
+
+.carousel .slide {
+  background: transparent !important;
+}
+
+.make-select-white .grommetux-control-icon {
+  stroke: white !important;
+}

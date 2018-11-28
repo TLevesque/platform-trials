@@ -1,0 +1,48 @@
+.device {
+  position: relative;
+  background-size: cover;
+}
+.device .screen {
+  position: absolute;
+  background-size: cover;
+}
+.device .button {
+  position: absolute;
+  cursor: pointer;
+}
+
+.device[data-device='iPhone7'][data-orientation='portrait'][data-color='black'] {
+  padding-bottom: 203.10345%;
+}
+.device[data-device='iPhone7'][data-orientation='portrait'][data-color='black']
+  .screen {
+  top: 11.99774%;
+  left: 6.2069%;
+  width: 87.35632%;
+  height: 76.06112%;
+}
+.device[data-device='iPhone7'][data-orientation='portrait'][data-color='black']
+  .button {
+  top: 89.53028%;
+  left: 42.29885%;
+  width: 15.74713%;
+  height: 7.75325%;
+}
+
+.device[data-device='iPadAir2'][data-orientation='portrait'][data-color='black'] {
+  padding-bottom: 141.39298%;
+}
+.device[data-device='iPadAir2'][data-orientation='portrait'][data-color='black']
+  .screen {
+  top: 9.09091%;
+  left: 6.45527%;
+  width: 86.97622%;
+  height: 82.01842%;
+}
+.device[data-device='iPadAir2'][data-orientation='portrait'][data-color='black']
+  .button {
+  top: 93.55226%;
+  left: 46.82899%;
+  width: 6.28539%;
+  height: 4.44533%;
+}

@@ -1,0 +1,72 @@
+@import '../defaults';
+
+@mixin button($color, $secondary-color) {
+  width: 200px;
+  height: 36px;
+  border-radius: 18px;
+  transform: translateX(+21px);
+  // padding: 2px 20px;
+  font-size: 0.9rem;
+  border: none;
+  background-color: $color;
+  transition: all ease 1.5s;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+
+    & > span {
+      color: $color;
+    }
+  }
+
+  & > span {
+    color: $secondary-color;
+  }
+}
+
+.toggle {
+  &--true {
+    @include button(
+      nth($brand-grey-colors, 2),
+      lighten($secondary-background-color, 10%)
+    );
+  }
+
+  &--false {
+    @include button($secondary-background-color, nth($brand-grey-colors, 2));
+
+    & > span {
+      color: darken($secondary-background-color, 40%);
+    }
+
+    &:hover {
+      & > span {
+        color: darken($secondary-background-color, 5%);
+      }
+    }
+  }
+}
+
+.toggle-button {
+  &--true {
+    width: 42px;
+    height: 42px;
+    background-color: $brand-color;
+    border-radius: 50%;
+    transition: transform 100ms ease-in-out;
+    transform: translateX(-21px);
+    z-index: 3;
+    border: 3px solid #fff;
+  }
+  &--false {
+    width: 42px;
+    height: 42px;
+    background-color: $brand-color;
+    border-radius: 50%;
+    transition: transform 100ms ease-in-out;
+    transform: translateX(-179px);
+    z-index: 3;
+    border: 3px solid nth($brand-grey-colors, 2);
+  }
+}

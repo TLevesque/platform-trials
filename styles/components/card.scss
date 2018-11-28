@@ -1,0 +1,29 @@
+@import '../defaults';
+
+.close-button {
+  &--white span {
+    color: #fff !important;
+    transition: color ease 1.5s !important;
+
+    &:hover {
+      color: darken(nth($brand-grey-colors, 3), 15%) !important;
+    }
+  }
+
+  &--grey span {
+    color: #a9a9a9 !important;
+    transition: color ease 1.5s !important;
+
+    &:hover {
+      color: darken(#a9a9a9, 15%) !important;
+    }
+  }
+}
+
+.hive-cardstack {
+  min-height: 0px !important;
+  min-width: 0px !important;
+  box-shadow: 0 2px 6px rgba(0, 21, 64, 0.14), 0 10px 20px rgba(0, 21, 64, 0.05) !important;
+  border-radius: 6px !important;
+  overflow: hidden;
+}

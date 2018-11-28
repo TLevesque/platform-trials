@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import iphone from "../static/iphone.png";
 
-import "../styles/style.scss";
+import "../styles/index.scss";
 
 export default () => (
   <div className="example">

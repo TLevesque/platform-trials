@@ -1,0 +1,108 @@
+$brand-color: #6800c0;
+$brand-link-color: $brand-color;
+$brand-grey-colors: (#000001, #595959, #c3c5c8, #1b1a1a, #383838);
+$border-radius: 10px;
+$brand-color-lighter: lighten($brand-color, 10%);
+$brand-color-darker: darken($brand-color, 9%);
+
+$brand-neutral-colors: ($brand-color-lighter, #f5f5f5, #767676);
+$brand-accent-colors: ($brand-color, $brand-color-darker);
+$brand-status-colors: (
+  critical: #d04e4e,
+  error: #d04e4e,
+  warning: #ffb86b,
+  ok: #4eb976,
+  unknown: #a8a8a8,
+  disabled: #a8a8a8,
+);
+
+$brand-error-colored-color: #f59f9f;
+$brand-graph-colors: $brand-neutral-colors;
+$brand-light-colors: (#ffffff, #f5f5f5);
+
+$text-color: nth($brand-grey-colors, 1);
+$text-color-white: nth($brand-light-colors, 1);
+$text-color-light: nth($brand-neutral-colors, 2);
+$secondary-text-color: nth($brand-neutral-colors, 2);
+$hover-text-color: #000;
+$placeholder-text-color: $text-color;
+$colored-text-color: rgba(255, 255, 255, 0.85); //#dbdbdb;
+$active-colored-text-color: #fff;
+$inactive-colored-text-color: rgba(255, 255, 255, 0.7);
+$link-color: $brand-link-color;
+$link-hover-color: $brand-color-darker;
+$colored-text-color-lightness-threshold: 63;
+
+$background-color: rgba(#eee, 0.9);
+$secondary-background-color: #ffffff;
+$hover-background-color: rgba(#ddd, 0.5);
+$colored-active-background-color: rgba(0, 0, 0, 0.15);
+$colored-hover-background-color: rgba(0, 0, 0, 0.1);
+$selected-background-color: $brand-color-lighter;
+$selected-text-color: $text-color;
+$selected-primary-background-color: $brand-color;
+$selected-primary-text-color: $colored-text-color;
+
+$border-color: transparent;
+$strong-border-color: #000;
+$colored-border-color: none;
+$colored-strong-border-color: #fff;
+$separator-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+$heading-text-color: $text-color;
+$paragraph-text-color: $secondary-text-color;
+
+// Control Icons
+
+$icon-color: #666; // meets AA accessibility
+$active-icon-color: $brand-color-darker;
+$disabled-icon-color: #ccc;
+$colored-icon-color: rgba(255, 255, 255, 0.7); //#dbdbdb;
+$colored-status-color: rgba(255, 255, 255, 0.9); //#dbdbdb;
+$active-colored-icon-color: #fff;
+$icon-badge-background-color: nth($brand-accent-colors, 1);
+$icon-badge-text-color: $text-color;
+
+$unset-color: #ddd;
+$control-background-color: rgba($text-color, 0.2);
+
+$meter-color: $brand-color;
+$meter-background-color: rgba(0, 0, 0, 0.1);
+$colored-meter-background-color: rgba(#fff, 0.2);
+$threshold-color: rgba($text-color, 0.2);
+$cursor-color: $text-color;
+$toast-background-color: rgba(#eee, 0.9);
+
+// Controls
+
+$focus-border-color: transparent;
+$control-brand-color: $brand-color;
+
+$button-border-color: transparent;
+$button-text-color: $text-color;
+$button-secondary-color: #bebebe;
+$button-accent-color: nth($brand-accent-colors, 1);
+$button-drop-shadow-color: rgba(0, 0, 0, 0.5);
+$button-colored-border-color: rgba(
+  255,
+  255,
+  255,
+  0.7
+); ///rgba(255, 255, 255, 0.7) ;
+
+$layer-overlay-background-color: rgba(0, 0, 0, 0.5);
+$layer-background-color: #fff; // rgba($background-color, 0.95); ///inherit; //rgba(255, 255, 255, 0.95);
+$layer-border: none; // 1px solid $brand-color;
+$layer-box-shadow: none; // 0px 2px 4px rgba(0, 0, 0, 0.3) ;
+$drop-background: rgba(#f8f8f8, 0.95);
+$drop-border: none; // 1px solid $border-color ;
+$drop-box-shadow: none; // 0px 2px 4px rgba(0, 0, 0, 0.3) ;
+$form-field-background-color: transparent;
+$drop-background-color: rgba(255, 255, 255, 0.9);
+$header-background-color: rgba(255, 255, 255, 0.9);
+$footer-background-color: rgba(255, 255, 255, 0.9);
+$active-background-color: rgba(255, 255, 255, 0.8);
+$sort-placeholder-background-color: rgba(0, 0, 255, 0.1);
+
+$inverse-background-color: nth($brand-neutral-colors, 1);
+$inverse-color: #fff;

@@ -1,0 +1,91 @@
+.dashboard {
+  display: grid;
+  background-color: #f9f9f9 !important;
+  grid-template-columns: 325px 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'sidebar report';
+}
+
+.sidebar {
+  display: grid;
+  grid-template-rows: 80px 390px 640px 70px 100px;
+  grid-area: sidebar;
+  background-color: #f2f5f9 !important;
+
+  grid-template-areas:
+    'reportSelect'
+    'datepicker'
+    'filterarea'
+    'chartToggle'
+    'legend';
+}
+
+.reportSelect {
+  grid-area: reportSelect;
+  align-self: center;
+}
+
+.datepicker {
+  grid-area: datepicker;
+  align-self: center;
+}
+
+.filterarea {
+  grid-area: filterarea;
+}
+
+.chartToggle {
+  grid-area: chartToggle;
+  align-self: center;
+}
+
+.legend {
+  grid-area: legend;
+  align-self: center;
+}
+
+.report {
+  display: grid;
+  grid-template-rows: 120px;
+  grid-template-columns: 1fr;
+
+  grid-area: report;
+
+  grid-template-areas:
+    'period'
+    'tab';
+}
+
+.period {
+  grid-area: period;
+  align-self: center;
+}
+
+.tab {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  grid-area: tab;
+
+  grid-template-areas:
+    'kpibox'
+    'kpicircle'
+    'chart';
+}
+
+.kpibox {
+  grid-area: kpibox;
+  align-self: center;
+}
+
+.kpicircle {
+  grid-area: kpicircle;
+  align-self: center;
+}
+
+.chart {
+  grid-area: chart;
+  width: 100%;
+  height: 640px;
+  background: -webkit-linear-gradient(bottom, #413e53 0%, #f9f9f9 40px);
+}

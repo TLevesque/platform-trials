@@ -1,0 +1,92 @@
+@import '../defaults';
+
+%shadow {
+  text-shadow: 2px 2px 4px #000000 !important;
+}
+
+.service__card {
+  &-label--simple_pink-darker {
+    color: $brand-color-darker !important;
+  }
+
+  &-label--simple_pink {
+    color: $brand-color !important;
+  }
+
+  &-label--white {
+    @extend %shadow;
+    text-transform: uppercase !important;
+    color: $text-color-white !important;
+    font-weight: 500 !important;
+  }
+
+  &-main {
+    width: 100% !important;
+    padding: 12px !important;
+  }
+
+  &-list-item {
+    padding: 12px 24px !important;
+  }
+
+  &-days {
+    min-width: 50px !important;
+    margin-right: 10px !important;
+
+    &-label {
+      background-color: $brand-color-lighter !important;
+      padding: 5px 10px !important;
+      margin-right: 10px !important;
+      border-radius: 29px !important;
+      color: $secondary-background-color !important;
+      width: 70px !important;
+      height: 34px !important;
+      text-align: center !important;
+      cursor: pointer !important;
+
+      &:hover {
+        background-color: darken($brand-color-lighter, 5%) !important;
+        font-weight: 600 !important;
+      }
+
+      &-disabled {
+        background-color: $colored-active-background-color !important;
+        color: $inactive-colored-text-color !important;
+        padding: 5px 10px !important;
+        margin-right: 10px !important;
+        border-radius: 29px !important;
+        width: 60px !important;
+        text-align: center !important;
+      }
+
+      &-animate {
+        background-color: darken($brand-color-lighter, 5%) !important;
+        padding: 5px 10px !important;
+        margin-right: 10px !important;
+        border-radius: 29px !important;
+        color: $secondary-background-color !important;
+        width: 70px !important;
+        height: 34px !important;
+        text-align: center !important;
+        font-weight: 600 !important;
+        animation: blinker 0.4s linear infinite !important;
+      }
+    }
+  }
+
+  &-instructions {
+    background-color: $colored-active-background-color !important;
+    border: none;
+  }
+
+  .servicecard {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: filter 0.25s;
+
+    &:hover {
+      filter: brightness(120%);
+    }
+  }
+}

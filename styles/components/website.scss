@@ -1,0 +1,58 @@
+@import '../defaults';
+
+.black {
+  color: nth($brand-grey-colors, 2);
+}
+
+.navigation-burger:hover {
+  stroke: var(--brand-primary) !important;
+}
+
+.website {
+  &-app {
+    background-color: $secondary-background-color !important;
+  }
+
+  &-days {
+    min-width: 50px !important;
+    margin-right: 10px !important;
+
+    &-label {
+      background-color: var(--brand-primary) !important;
+      padding: 5px 10px !important;
+      margin-right: 5px !important;
+      margin-left: 5px !important;
+      border-radius: 29px !important;
+      color: var(--brand-text) !important;
+      width: 70px !important;
+      height: 34px !important;
+      text-align: center !important;
+      cursor: pointer !important;
+
+      &:hover {
+        background-color: var(--brand-primary-dark) !important;
+        font-weight: 600 !important;
+      }
+
+      &-disabled {
+        background-color: $colored-active-background-color !important;
+        color: $inactive-colored-text-color !important;
+        padding: 5px 10px !important;
+        margin-right: 10px !important;
+        border-radius: 29px !important;
+        width: 60px !important;
+        text-align: center !important;
+      }
+    }
+  }
+}
+
+input[value='true'] ~ .website-days-label {
+  color: var(--brand-primary);
+  background-color: var(--brand-primary);
+
+  &:hover {
+    color: $text-color-white;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,47 @@
+.loginButton--input {
+  border-radius: 8px !important;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  border: none !important;
+  color: black !important;
+}
+
+.business-login-button {
+  border-radius: 18px;
+  width: 100%;
+  font-size: 0.9rem;
+  transition: all ease 1.5s;
+  text-transform: uppercase;
+  max-width: 330px;
+
+  & > span {
+    color: white;
+  }
+
+  &--input {
+    border-radius: 5%;
+    color: nth($brand-grey-colors, 2);
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    width: 100%;
+    border-width: 0px !important;
+    padding: 12px 20px !important;
+  }
+
+  &--facebook {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png')
+      left no-repeat;
+    background-color: #4c69ba;
+    border-left: 12px solid transparent;
+
+    &:hover {
+      background-color: #5b7bd5;
+    }
+  }
+
+  &--email {
+    background-color: $brand-color;
+
+    &:hover {
+      background-color: $brand-color;
+    }
+  }
+}

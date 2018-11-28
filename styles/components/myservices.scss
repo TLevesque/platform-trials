@@ -1,0 +1,93 @@
+@import '../defaults';
+
+%shadow {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.hive__service {
+  &-label--white {
+    @extend %shadow;
+    text-transform: uppercase;
+    color: $text-color-white;
+    font-weight: 500;
+  }
+
+  &-main {
+    width: 100%;
+    padding: 12px;
+  }
+
+  &-list-item {
+    padding: 12px 24px;
+  }
+
+  &-days {
+    min-width: 50px;
+    margin-right: 10px;
+
+    &-label {
+      background-color: $brand-color-lighter;
+      padding: 5px 10px;
+      margin-right: 10px;
+      border-radius: 29px;
+      width: 60px;
+      text-align: center;
+
+      &:hover {
+        background-color: darken($brand-color, 5%);
+      }
+
+      &-disabled {
+        background-color: $colored-active-background-color;
+        color: $inactive-colored-text-color;
+        padding: 5px 10px;
+        margin-right: 10px;
+        border-radius: 29px;
+        width: 60px;
+        text-align: center;
+      }
+    }
+  }
+
+  &-time {
+    min-width: 50px;
+    margin-right: 10px;
+
+    &-label {
+      background-color: $brand-color-lighter;
+      padding: 5px 10px;
+      margin-right: 10px;
+      border-radius: 29px;
+      width: 60px;
+      text-align: center;
+
+      &:hover {
+        background-color: darken($brand-color-lighter, 15%);
+      }
+    }
+  }
+
+  &-instructions {
+    width: 100%;
+    height: 150px;
+    resize: none;
+  }
+}
+
+input[value='true'] ~ .hive__service-days-label {
+  background-color: $secondary-background-color;
+  color: $brand-color;
+
+  &:hover {
+    background-color: darken($brand-color, 15%);
+  }
+}
+
+input[type='radio']:checked ~ .hive__service-time-label {
+  background-color: $secondary-background-color;
+  color: $brand-color;
+
+  &:hover {
+    background-color: darken($brand-color-lighter, 15%);
+  }
+}

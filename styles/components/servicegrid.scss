@@ -1,0 +1,32 @@
+.servicegrid {
+  .servicecard {
+    flex: 1;
+    min-width: 24rem;
+
+    &:nth-child(5n) {
+      flex-basis: 15rem;
+    }
+
+    &:nth-child(2n + 1) {
+      flex-basis: 25rem;
+    }
+
+    &:nth-child(7n + 4) {
+      flex-basis: 20rem;
+    }
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+.servicegrid2 {
+  .servicecard {
+    flex: 1;
+
+    &:nth-child(n) {
+      min-width: 50vw;
+      flex-basis: fill/2;
+    }
+  }
+}
