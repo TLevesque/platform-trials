@@ -11,10 +11,10 @@ const {
 const { ANALYZE } = process.env;
 const withTM = require("next-plugin-transpile-modules");
 
-const { PHASE_PRODUCTION_SERVER } =
-  process.env.NODE_ENV === "development"
-    ? {}
-    : require("next-server/constants");
+// const { PHASE_PRODUCTION_SERVER } =
+//   process.env.NODE_ENV === "development"
+//     ? {}
+//     : require("next-server/constants");
 
 // module.exports = (phase, { defaultConfig }) => {
 //   if (phase === PHASE_PRODUCTION_SERVER) {
@@ -28,33 +28,31 @@ const { PHASE_PRODUCTION_SERVER } =
 // };
 
 const nextConfig = {
-  webpack: (phase, { config }) => {
-    if (phase === PHASE_PRODUCTION_SERVER) {
-      config.plugins = config.plugins || [];
-      config.plugins = [
-        ...config.plugins,
-        new Dotenv({
-          path: path.join(__dirname, ".env"),
-          systemvars: true
-        })
-      ];
-      if (ANALYZE) {
-        config.plugins.push(new WebpackBundleSizeAnalyzerPlugin("stats.txt"));
-      }
-      config.externals = Array.isArray(config.externals)
-        ? config.externals.map(fn =>
-            typeof fn === "function"
-              ? (context, request, callback) => {
-                  if (request === "lodash-es") {
-                    return callback(null, "commonjs lodash");
-                  }
-                  return fn(context, request, callback);
-                }
-              : fn
-          )
-        : config.externals;
-      return config;
+  webpack: config => {
+    config.plugins = config.plugins || [];
+    config.plugins = [
+      ...config.plugins,
+      new Dotenv({
+        path: path.join(__dirname, ".env"),
+        systemvars: true
+      })
+    ];
+    if (ANALYZE) {
+      config.plugins.push(new WebpackBundleSizeAnalyzerPlugin("stats.txt"));
     }
+    config.externals = Array.isArray(config.externals)
+      ? config.externals.map(fn =>
+          typeof fn === "function"
+            ? (context, request, callback) => {
+                if (request === "lodash-es") {
+                  return callback(null, "commonjs lodash");
+                }
+                return fn(context, request, callback);
+              }
+            : fn
+        )
+      : config.externals;
+    return config;
   }
 };
 
