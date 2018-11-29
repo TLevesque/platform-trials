@@ -1481,18 +1481,18 @@
   ],
   "../styles/index.scss": [
     {
-      "id": 239,
+      "id": 213,
       "name": "./styles/index.scss",
-      "file": "static/chunks/styles.d79869b37b1fafadd2b2.js",
-      "publicPath": "static/chunks/styles.d79869b37b1fafadd2b2.js"
+      "file": "static/chunks/styles.d471ff0d2d1910725cf9.js",
+      "publicPath": "static/chunks/styles.d471ff0d2d1910725cf9.js"
     }
   ],
   "undefined": [
     {
-      "id": 822,
+      "id": 214,
       "name": null,
-      "file": "static/chunks/styles.d79869b37b1fafadd2b2.js",
-      "publicPath": "static/chunks/styles.d79869b37b1fafadd2b2.js"
+      "file": "static/chunks/styles.d471ff0d2d1910725cf9.js",
+      "publicPath": "static/chunks/styles.d471ff0d2d1910725cf9.js"
     }
   ]
 }

@@ -14,8 +14,8 @@
     "/index": [
       "static/runtime/webpack-89179faa512dd01fbb62.js",
       "static/chunks/commons.eefeab8bc2eae127811c.js",
-      "static/css/styles.4426a971.chunk.css",
-      "static/chunks/styles.d79869b37b1fafadd2b2.js",
+      "static/css/styles.cee821ff.chunk.css",
+      "static/chunks/styles.d471ff0d2d1910725cf9.js",
       "static/runtime/main-b110d633c63d42621dec.js"
     ],
     "/posts": [
@@ -36,8 +36,8 @@
     "/": [
       "static/runtime/webpack-89179faa512dd01fbb62.js",
       "static/chunks/commons.eefeab8bc2eae127811c.js",
-      "static/css/styles.4426a971.chunk.css",
-      "static/chunks/styles.d79869b37b1fafadd2b2.js",
+      "static/css/styles.cee821ff.chunk.css",
+      "static/chunks/styles.d471ff0d2d1910725cf9.js",
       "static/runtime/main-b110d633c63d42621dec.js"
     ]
   }
