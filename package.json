@@ -11,7 +11,9 @@
     "analyze:size": "cross-env ANALYZE=1 next build && cat .next/stats.txt"
   },
   "engines": {
-    "yarn": "1.12.3"
+    "node": "8.10.0",
+    "yarn": "1.12.3",
+    "npm": "6.4.1"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",

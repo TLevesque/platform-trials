@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import iphone from "../static/iphone.png";
 
 import "../styles/index.scss";
 
@@ -23,6 +22,6 @@ export default () => (
         </Link>
       </li>
     </ul>
-    <img src={iphone} />
+    <img src="/static/iphone.png" />
   </div>
 );
