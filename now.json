@@ -1,28 +1,20 @@
 {
   "version": 2,
+  "name": "platform-trials",
+  "regions": ["bru"],
+  "public": false,
   "builds": [
     {
-      "src": "package.json",
-      "use": "@now/next",
+      "src": "server.mjs",
+      "use": "@now/node",
       "config": {
-        "maxLambdaSize": "50mb"
+        "maxLambdaSize": "10mb"
       }
     },
     {
-      "src": "static/*",
-      "use": "@now/static"
-    }
-  ],
-  "off-builds": [
-    {
-      "src": "index.js",
-      "use": "@now/node"
-    }
-  ],
-  "off-routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.js"
-    }
+      "src": "next.config.js",
+      "use": "@now/next"
+    },
+    { "src": "static/*", "use": "@now/static" }
   ]
 }
