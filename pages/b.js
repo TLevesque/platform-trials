@@ -1,1 +1,3 @@
-export default () => <div>{process.env.TEST}</div>;
+export default () => (
+  <div>Here the env var TEST :-: {process.env.TEST} :-:</div>
+);
