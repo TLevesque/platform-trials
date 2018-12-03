@@ -10,11 +10,6 @@
     "analyze:browser": "BUNDLE_ANALYZE=browser next build",
     "analyze:size": "cross-env ANALYZE=1 next build && cat .next/stats.txt"
   },
-  "engines": {
-    "node": "10.13.0",
-    "yarn": "1.12.3",
-    "npm": "6.4.1"
-  },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
     "dotenv-webpack": "^1.5.7",

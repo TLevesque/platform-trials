@@ -22,9 +22,9 @@ module.exports = (phase, { defaultConfig }) => {
   const { ANALYZE } = process.env;
 
   return withBundleAnalyzer(
-    withTM(
-      images(
-        sass({
+    images(
+      sass(
+        withTM({
           analyzeServer: ["server", "both"].includes(
             process.env.BUNDLE_ANALYZE
           ),
