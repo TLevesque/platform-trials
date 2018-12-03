@@ -17,14 +17,6 @@
       "static/chunks/styles.js",
       "static/runtime/main.js"
     ],
-    "/b": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/posts": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/a": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
