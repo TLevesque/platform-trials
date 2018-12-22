@@ -2,9 +2,9 @@
   "name": "custom-server-koa",
   "version": "1.0.0",
   "scripts": {
-    "dev": "node --experimental-modules server.mjs",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node --experimental-modules server.mjs",
+    "start": "NODE_ENV=production node server.js",
     "analyze": "BUNDLE_ANALYZE=both next build",
     "analyze:server": "BUNDLE_ANALYZE=server next build",
     "analyze:browser": "BUNDLE_ANALYZE=browser next build",

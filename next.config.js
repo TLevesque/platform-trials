@@ -11,8 +11,8 @@ module.exports = (phase, { defaultConfig }) => {
 
   const sass = require("@zeit/next-sass");
   const images = require("next-images");
-  require("dotenv").config();
   const path = require("path");
+  require("dotenv").config();
   const Dotenv = require("dotenv-webpack");
   const withBundleAnalyzer = require("@zeit/next-bundle-analyzer");
   const {
