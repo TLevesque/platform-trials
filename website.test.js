@@ -1,37 +1,3 @@
-// function sum(a, b) {
-//   return a + b;
-// }
-
-// test('adds 1 + 2 to equal 3', () => {
-//   expect(sum(1, 2)).toBe(3);
-// });
-
-//////////////////
-
-// import puppeteer from 'puppeteer';
-
-// describe('Google', () => {
-//   let page;
-//   let browser;
-
-//   beforeAll(async () => {
-//     browser = await puppeteer.launch();
-//     page = await browser.newPage();
-//     await page.goto('https://google.com');
-//   });
-
-//   it('should display "google" text on page', async () => {
-//     await page.screenshot({ path: 'screenshot.png' });
-//     await expect(page).toMatch('google');
-//   });
-
-//   afterAll(async () => {
-//     await browser.close();
-//   });
-// });
-
-/////////////////////////////
-
 const {
   setup,
   teardown
@@ -49,18 +15,15 @@ describe('Bookup Website', () => {
     await page.goto('http://localhost:3000/', { timeout: 0 });
   });
 
-  it('should be able to login', async () => {
-    await page.screenshot({ path: 'screenshot.png' });
-    await expect(page).toMatch('a');
+  it('should be able to find post in the page', async () => {
+    await expect(page).toMatch('post');
+    await page.screenshot({ path: 'screenshot1.png' });
+  });
 
-    // await expect(page).toClick('button', { text: 'login' });
-    // await page.waitForNavigation();
-    // await expect(page).toFill('input[name="email"]', 'admin@bookup.team');
-    // await expect(page).toFill('input[name="password"]', 'K8HTB/sM%)Nz<wCh');
-
-    // await expect(page).toClick('button', { text: 'login' });
-    // await page.waitForNavigation();
-    // await expect(page).toMatch('Welcome');
+  it('should be able to click on post link', async () => {
+    await expect(page).toClick('a', { text: 'post' });
+    await page.waitForNavigation();
+    await page.screenshot({ path: 'screenshot2.png' });
   });
 
   afterAll(async () => {
