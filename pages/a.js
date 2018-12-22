@@ -1,6 +1,6 @@
 import { has } from "lodash-es";
-import toto from "../helpers/serverHelpers.mjs";
-import { qsdfg, wxcvb } from "../helpers/serverHelp.mjs";
+import toto from "../helpers/serverHelpers";
+import { qsdfg, wxcvb } from "../helpers/serverHelp";
 
 console.log("lodash:", has(qsdfg, "a"));
 
