@@ -12,18 +12,18 @@ describe('Bookup Website', () => {
       launchTimeout: 300000,
       port: 3000,
     });
-    await page.goto('http://localhost:3000/', { timeout: 0 });
+    await page.goto('http://localhost:3000/', { timeout: 0, waitUntil: 'networkidle2' });
   });
 
   it('should be able to find post in the page', async () => {
     await expect(page).toMatch('post');
-    await page.screenshot({ path: 'screenshot1.png' });
+    await page.screenshot({ path: 'tests/screenshots/screenshot111.png' });
   });
 
   it('should be able to click on post link', async () => {
     await expect(page).toClick('a', { text: 'post' });
     await page.waitForNavigation();
-    await page.screenshot({ path: 'screenshot2.png' });
+    await page.screenshot({ path: 'tests/screenshots/screenshot222.png' });
   });
 
   afterAll(async () => {
